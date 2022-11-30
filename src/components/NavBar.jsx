@@ -1,4 +1,5 @@
 import '../styles.css';
+import CartWidget from './CartWidget';
 
 const NavBar = ({logo}) => {
     return(
@@ -20,11 +21,7 @@ const NavBar = ({logo}) => {
               <a href="#">PRODUCTOS</a>
           </ul>
       </nav>
-      <ul className="nav__list">
-        <div className="carrito__icon">
-        <i class="bi bi-bag">1</i>
-        </div>
-      </ul>
+    <CartWidget/>
   </header>
     )
 }
