@@ -1,12 +1,10 @@
 import '../styles.css';
+import ItemList from "ItemList";
 
-const ItemListContainer = (props) =>{
-return(
-<div className="title-welcome">
-    {props.greeting}
-</div>
-
-)
+const ItemListContainer = () => {
+    return (
+        <div className="title-welcome"><ItemList/></div>
+    )
 }
 
 export default ItemListContainer;
