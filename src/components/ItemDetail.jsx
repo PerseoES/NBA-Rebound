@@ -1,10 +1,9 @@
 import React from 'react';
-import ItemDetail from './ItemDetail'
-import { Link } from 'react-router-dom';
+// import ItemCount from './ItemCount';
 
+const ItemDetail = (props) => {
 
-
-const Item = (props) => (
+return(
     <div className="card estilo-c">
     <a href="#">
         <div className="img-container">
@@ -15,16 +14,11 @@ const Item = (props) => (
     <div className="info-container">
         <h3>{props.producto.marca}</h3>
         <strong>{props.producto.precio}</strong>
-        <span className="rating">★★★★☆</span>
-        <Link to={`/item/${props.producto.id}`}>
-            <button className="add-cart">
-                Ver detalles...
-            </button>
-        </Link>
+        <span className="rating">{props.producto.estado}</span>
+        <button className="add-cart">ItemCount</button>
     </div>
 </div>
-
-
 )
+}
 
-export default Item;
+export default ItemDetail;
